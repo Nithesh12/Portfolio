@@ -46,6 +46,7 @@ function App() {
                  <Route exact path='/resume' element={< Resume />}></Route>
           </Routes>
       </nav>
+      <div className='overall'>
       <div className='word'>
         <h4>Hi there</h4>
           <h1>I'm </h1>
@@ -74,6 +75,7 @@ function App() {
       </div>
       <div className='image'>
       <img src='../imag1.png' ></img>
+      </div>
       </div>
       <div className={isToggled?"socialNotExpand":"social"}>
         <a href='https://github.com/Nithesh12' className='appicon'> 
