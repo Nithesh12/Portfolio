@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Fuzzy+Bubbles');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Alice');
+
 body{
   background-color: #e0fbfc;
 }
@@ -25,14 +29,21 @@ body{
   justify-content: flex-end;
   list-style-type: none;
 }
-.navbar a{
+.routed{
+  margin-top: -10px;
+  color: #98c1d9;
+  text-align: center;
+  font-size: small;
+}
+.navbar li .navlist{
   padding: .5em 2em;
   display: block;
 }
-.barMenu a{
+.barMenu li .navlist{
   color: white;
+  font-weight:550;
   text-decoration: none;
-  font-family: cursive;
+  font-family:Fuzzy Bubbles;
 }
 .icons{
   display: flex;
@@ -43,10 +54,10 @@ body{
   margin-right: -60px;
 }
 
-.navbar li a:hover{
+.navbar li .navlist:hover{
   color: #98c1d9;
 }
-.navbar li a:focus{
+.navbar li .navlist:focus{
   color: #98c1d9;
 }
 
@@ -62,42 +73,59 @@ body{
 #bar{
   display:none;
   color: #98c1d9;
-  /* align-items: flex-end; */
   
 }
-
 img{
   width: 100%;
   height: 100%;
-  border-radius: 35%;
+  /* border-radius: 35%; */
 }
 h1{
-  margin-top: auto;
-  font-size: 50px;
+  margin-top: -20px;
+  font-size: 55px;
   color: white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Alice;
 }
 h1::after{
   color: #ee6c4d;
   content: " Nithesh";
 }
-.image{
-  display: flex;
-  width: 250px;
+img{
+  width: 270px;
   height: 250px;
-  margin-top: -240px;
+  margin-left: -50px;
+  margin-top: -150px;
+}
+
+/* .image{
+  width: 300px;
+  display: flex;
+  height: 300px;
+  margin-top: -300px;
   margin-left: auto;
+} */
+
+.image{
+  width: 150px;
+  display: flex;
+  height: 100px;
+  margin-top: -125px;
+  margin-left: auto;
+  margin-right: 70px;
+  background-color: #98c1d9;
   border-radius: 100%;
 }
+
 .word {
   margin-top: 70px;
-  margin-left: 40px;
-  font-size: 15px;
-  font-family:monospace;
+  margin-left: 70px;
+  font-size: 17px;
+  font-family:Fuzzy Bubbles;
   color: #e0fbfc;
 }
 .word h4{
-  font-size: smaller;
+  font-family: Fuzzy Bubbles;
+  font-size: small;
   font-weight: 100;
   color: white;
 }
@@ -105,6 +133,7 @@ p{
   color: #e0fbfc;
   margin-top: -30px;
   font-size: larger;
+  font-family:Fuzzy Bubbles;
   font-weight:lighter;
 }
 .socialNotExpand{
@@ -113,6 +142,7 @@ p{
   justify-content: center;
 }
 button{
+  font-family: Fuzzy Bubbles;
   cursor: pointer;
   width: 100px;
   height: 40px;
@@ -131,7 +161,7 @@ button a{
   font-size: smaller;
 }
 .social{
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
   justify-content:center;
 }
@@ -143,8 +173,8 @@ button a{
 .btn{
   background-color: #3d5a80;
 }
-@media (max-width:638px){
-  
+@media (max-width:682px){
+ 
   .Container{
     height: 550px;
   }
@@ -158,10 +188,9 @@ button a{
     max-width: 600px;
 
   }
-  .navlinks{
-    justify-content: center;
-    align-items: center;
-  }
+   .navlinks{
+    margin-left: -50px;
+  } 
   .barMenu{
     flex-direction: column; 
     align-items: center;
@@ -176,21 +205,39 @@ button a{
   h1{
     font-size: 45px;
   }
+  .word{
+    margin-left:40px;
+  }
+  img{
+    width:230px;
+    height:230px;
+    margin-top: -150px;
+    margin-left:-54px;
+  }
   .image{
-    margin-top: -200px;
-    width: 200px;
-    height: 200px;
+    margin-right: 60px;
+    margin-top: -100px;
+    width: 120px;
+    height: 80px;
   }
   
 }  
-@media (max-width:492px){
+@media (max-width:530px){
   
   h1{
     font-size: 35px;
   }
+  img{
+    margin-top: -144px;
+    width:200px;
+    height:200px;
+    margin-left:-48px;
+  }
   .image{
-    width: 155px;
-    height: 155px;
+    width: 105px;
+    margin-top: -80px;
+    height: 55px;
+    margin-right: 40px;
   }
   .socialNotExpand{
     margin-top: 70px;
@@ -199,7 +246,7 @@ button a{
     margin-top: 200px;
   }
   p{
-    margin-top: -12px;
+    margin-top: -25px;
     font-size: large;
   }
 }
@@ -215,10 +262,17 @@ button a{
     font-size: 65px;
     margin-top: -20px;
   }
+  img{
+    width:300px;
+    height:300px;
+    /* margin-left:-48px; */
+    margin-top: -180px;
+  }
   .image{
-    margin-top: -300px;
-   width: 320px;
-    height: 320px;
+    margin-top: -140px;
+    width: 200px;
+    height: 125px;
+    margin-right: 120px;
   }
   p{
     margin-top: -42px;

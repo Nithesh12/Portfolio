@@ -1,12 +1,16 @@
 import './index.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCircle,faBars} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCircle,faBars} from '@fortawesome/free-solid-svg-icons';
 import { FaGithub,FaInstagram,FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation';
 import { useState} from "react";
+import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import Resume from "./resume";
+import Project from "./project";
 function App() {
   const[isToggled,setIsToggled]=useState(false);
   return(
+      <BrowserRouter>
     <div className='Container'>
       <nav className='navbar'>
         <ul>
@@ -23,19 +27,24 @@ function App() {
           }>
         <ul className='barMenu'>
         <li>
-          <a href='#' className='navlist' id="home">Home</a>
+          <Link to="/" className='navlist' id="home">Home</Link>
         </li>
         <li>   
-          <a href='#' className='navlist'>Project</a>
+          <Link to="/project" className='navlist'>Project</Link>
         </li>
         <li>
-          <a href='#' className='navlist'>Resume</a>
+          <Link to="/resume" className='navlist'>Resume</Link>
         </li>
         <li>
-          <a href='#' className='navlist'>Contact</a>
+          <a href="mailto:nitheshb24@gmail.com" className='navlist'>Contact</a>
         </li>
             </ul></div></div>
         </ul>
+        <Routes>
+                 <Route exact path='/App' element={< App />}></Route>
+                 <Route exact path='/project' element={< Project />}></Route>
+                 <Route exact path='/resume' element={< Resume />}></Route>
+          </Routes>
       </nav>
       <div className='word'>
         <h4>Hi there</h4>
@@ -61,10 +70,10 @@ function App() {
       cursor={true}
       repeat={Infinity}
       style={{ fontSize: '1em' }}
-    />
+      />
       </div>
       <div className='image'>
-      <img src='../cartoon3-removebg-preview.png' ></img>
+      <img src='../imag1.png' ></img>
       </div>
       <div className={isToggled?"socialNotExpand":"social"}>
         <a href='https://github.com/Nithesh12' className='appicon'> 
@@ -78,6 +87,7 @@ function App() {
         </a>
       </div>
     </div>
+      </BrowserRouter>
   );
 }
 
