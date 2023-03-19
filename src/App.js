@@ -4,13 +4,12 @@ import {faCircle,faBars} from '@fortawesome/free-solid-svg-icons';
 import { FaGithub,FaInstagram,FaTwitter } from "react-icons/fa";
 import { TypeAnimation } from 'react-type-animation';
 import { useState} from "react";
-import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
-import Resume from "./resume";
+import { Link } from "react-router-dom";
+// import Resume from "./resume";
 import Project from "./project";
 function App() {
   const[isToggled,setIsToggled]=useState(false);
   return(
-      <BrowserRouter>
     <div className='Container'>
       <nav className='navbar'>
         <ul>
@@ -33,18 +32,14 @@ function App() {
           <Link to="/project" className='navlist'>Project</Link>
         </li>
         <li>
-          <Link to="/resume" className='navlist'>Resume</Link>
+          <Link to="" className='navlist'>Resume</Link>
         </li>
         <li>
           <a href="mailto:nitheshb24@gmail.com" className='navlist'>Contact</a>
         </li>
             </ul></div></div>
         </ul>
-        <Routes>
-                 <Route exact path='/App' element={< App />}></Route>
-                 <Route exact path='/project' element={< Project />}></Route>
-                 <Route exact path='/resume' element={< Resume />}></Route>
-          </Routes>
+       
       </nav>
       <div className='overall'>
       <div className='word'>
@@ -89,7 +84,6 @@ function App() {
         </a>
       </div>
     </div>
-      </BrowserRouter>
   );
 }
 
