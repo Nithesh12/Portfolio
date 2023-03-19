@@ -75,6 +75,13 @@ body{
   color: #98c1d9;
   
 }
+
+.smallpara{
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-family:cursive;
+}
 .overall{
   display: flex;
 }
@@ -164,6 +171,9 @@ button a{
   color: #e0fbfc;
   color: white;
   margin-left: 10px;
+}
+.new1{
+  margin-left: -5px;
 }
 .btn{
   background-color: #3d5a80;
