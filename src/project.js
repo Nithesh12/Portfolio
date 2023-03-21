@@ -46,11 +46,15 @@ function Project (){
             Electronic Medical Record, safest way to secure and share all the medical records between patients and doctors. Technologies used  : React Firebase
         </p>
 
-        <button className='new1'><a href='https://emr-wine.vercel.app/doctorRegistration' >Egg Counter</a></button>
-        <p className='smallpara'>Basic Website involving CRUD opeartions</p>
-
         <button className='new1'><a href='https://github.com/Nithesh12/jarvis'>Jarvis</a></button>
         <p className='smallpara'>Personal Voice Assitant,assists user to perform daily tasks just by a command. Technologies used : Python</p>
+       
+           <button className='new1'><a href='https://www.figma.com/proto/eOK3qccXr1kmBq897A6Cni/NmitClassifields?node-id=1-842&starting-point-node-id=1%3A842&scaling=contain'>College App</a></button>
+        <p className='smallpara'>A well designed app to improve my UI/UX skill. Technologies used : Figma</p>
+
+              <button className='new1'><a href='https://egg-counter-gvvjvs1mr-nithesh12.vercel.app/' >Egg Counter</a></button>
+        <p className='smallpara'>Basic Website involving CRUD opeartions</p>
+        
       </div>
 
       </div>
