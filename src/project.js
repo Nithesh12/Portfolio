@@ -41,7 +41,7 @@ function Project (){
       </nav>
 
       <div className='newDiv'>
-        <button className='new1' ><a href='https://emr-wine.vercel.app/doctorRegistration' >HealthMithra</a></button>
+        <button className='new1' ><a href='https://emr-wine.vercel.app/' >HealthMithra</a></button>
         <p className='smallpara'>
             Electronic Medical Record, safest way to secure and share all the medical records between patients and doctors. Technologies used  : React Firebase
         </p>
